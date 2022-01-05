@@ -26,7 +26,7 @@ public class DBController {
   private IndomieStoreRepo indomie ;
  
   @GetMapping("/indomie")
-  public List<IndomieStore> getAllguccistore(){
+  public List<IndomieStore> getAllindomiestore(){
       return indomie.findAll();
   }
    @GetMapping ("/indomie/{id}")
@@ -35,7 +35,7 @@ public class DBController {
     }
     
     @PostMapping ("/indomie")
-    public IndomieStore saveguccistoreDetails(@RequestBody IndomieStore s){
+    public IndomieStore saveindomiestoreDetails(@RequestBody IndomieStore s){
         return indomie.save(s);
     }
     
