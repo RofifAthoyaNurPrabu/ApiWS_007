@@ -44,7 +44,7 @@ public class DBController {
         return indomie.save(s);
     }
     
-    @DeleteMapping("/indomie/{idbarang}")
+    @DeleteMapping("/indomie/{id_indomie}")
     public ResponseEntity<HttpStatus> getIndomieStoreById(@PathVariable long id_indomie){
         indomie.deleteById(id_indomie);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
