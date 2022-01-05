@@ -35,12 +35,12 @@ public class DBController {
     }
     
     @PostMapping ("/indomie")
-    public IndomieStore saveindomiestoreDetails(@RequestBody IndomieStore s){
+    public IndomieStore saveindomieStoreDetails(@RequestBody IndomieStore s){
         return indomie.save(s);
     }
     
     @PutMapping("/indomie")
-    public IndomieStore updateOushop(@RequestBody IndomieStore s){
+    public IndomieStore updateIndomieStore(@RequestBody IndomieStore s){
         return indomie.save(s);
     }
     
